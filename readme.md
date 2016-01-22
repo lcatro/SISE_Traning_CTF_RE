@@ -1,24 +1,24 @@
 
 #华软网络安全小组逆向工程训练营
-SNST Reverse Engineering Traning
+
+
+###SNST Reverse Engineering Traning
+
+
+各个训练程序解析
+
 
 -----
-
-
-##各个训练程序解析
-
-
-
 
 ###1.RE-50 Writeup
 
   把代码导入到IDA ,用Hex-ray 把Main 函数汇编转到伪C 代码,结果如下
 
- 
+ ![](https://raw.githubusercontent.com/lcatro/SISE_Traning_CTF_RE/master/Writeup_Picture/QQ%E5%9B%BE%E7%89%8720160122180046.png)
 
   程序代码意思是:先给本地的数组的每个位置赋值,然后接收我们输入的字符串,再通过字符串对比函数来对比输入的字符串是否和本地校验的字符串一样,于是在strcmp 处下断点,位置如下
 
- 
+  ![](https://raw.githubusercontent.com/lcatro/SISE_Traning_CTF_RE/master/Writeup_Picture/QQ图片20160122180056.png)
 
   启动Ollydbg ,随意输入字符串
 
